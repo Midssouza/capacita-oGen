@@ -17,7 +17,7 @@ public class EXERCICIO5 {
 		
 		System.out.println("Digite nota 3 :");
 		n3=sc.nextDouble();
-		
+		// media ponderada 
 		mediaP = ((p1 * n1) + (p2 * n2) + (p3 * n3)) / ( p1 + p2 + p3);
 		
 		System.out.printf("Média da nota é %.2f : " , mediaP);

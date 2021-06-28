@@ -1,0 +1,94 @@
+package Calculadora;
+
+import java.util.Scanner;
+
+public class calculadora {
+	
+public static void main(String[] args) {
+	/* nomeUsuario
+	 * senhaUsuario 3 tentativas de erro 
+	 * laço de decisão if e else 
+	 * Menu - switch case 
+	 * decisão de saida 
+	 */
+		
+		Scanner ler = new Scanner (System.in);
+		
+		int num1, num2, senha, cont=0, senhaAtual=1984;
+		int soma , subtracao, multiplicacao, divisao;
+		
+		for( cont=0; cont<=2; cont ++) { 
+			System.out.println(" Digite sua senha: ");
+			senha = ler.nextInt();
+			
+				if (senha == senhaAtual) {
+				System.out.println("Digite o primeiro numero; ");
+				num1 = ler.nextInt();
+				System.out.println("Digite o segundo numero; ");
+				num2 = ler.nextInt();
+
+				System.out.println(" Senha Correta !!   ");
+				
+				
+				System.out.printf(" ---------- CALCULADORA DA MI ------- \n " );
+				
+				soma = (num1 + num2);
+				System.out.printf(" * 1 - soma é %d \n " , soma);
+				
+				subtracao = (num1 - num2);
+				System.out.printf(" * 2 - subtração é %d \n " , subtracao);
+				
+				multiplicacao = (num1 * num2);
+				System.out.printf(" * 3 - multiplicação é %d \n " , multiplicacao);
+				
+				divisao = (num1 / num2);
+				System.out.printf(" * 4 -divisão é %d \n " , divisao);
+
+				/*if (senha != senhaAtual) {
+					System.out.println("Senha incorreta");
+				}
+
+				else {
+
+					saldo = saldo - saque;
+
+					System.out.println("Saldo tual :" + saldo);
+					System.out.println("saque realizado com sucesso!");
+				}*/
+			} 
+			
+			else {
+				if (senha != senhaAtual) {
+					System.out.println(" Senha Incorreta!!   ");
+					cont++;
+				}
+				
+			}
+				
+		
+		/*System.out.print("digite o primeiro Numero : ");
+		num1 = ler.nextInt();
+		
+		System.out.print("digite o segundo Numero : ");
+		num2 = ler.nextInt();
+		
+		System.out.printf(" ---------- CALCULADORA DA MI ------- \n " );
+		
+		soma = (num1 + num2);
+		System.out.printf(" * 1 - soma é %d \n " , soma);
+		
+		subtracao = (num1 - num2);
+		System.out.printf(" * 2 - subtração é %d \n " , subtracao);
+		
+		multiplicacao = (num1 * num2);
+		System.out.printf(" * 3 - multiplicação é %d \n " , multiplicacao);
+		
+		divisao = (num1 / num2);
+		System.out.printf(" * 4 -divisão é %d \n " , divisao);*/
+		
+		
+		
+	}
+
+}
+}

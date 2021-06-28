@@ -1,0 +1,67 @@
+// Desafio de fazer calculadora 
+
+package Tarefa1;
+
+import java.util.Scanner;
+
+public class CALCULARORA {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		// variaveis
+		int valor1 = 0 , valor2=0 , resultado, senhaAtual=1984, senha = 0;
+		int soma, subtracao, multiplicacao, divisao;
+		String nome;
+		double resultado1=0.0,  cont = 0;
+
+		//cont <= 2;
+		System.out.print("Qual seu nome? ");
+		nome = sc.nextLine();
+
+		while (cont <= 2) {
+			System.out.println(" Digite sua senha: ");
+			senha = sc.nextInt();
+
+			if (senha == senhaAtual) {
+				System.out.println(" Digite o primeiro numero: ");
+				valor1 = sc.nextInt();
+				
+				System.out.print(" Digite o segundo Numero : ");
+				valor2 = sc.nextInt();	
+
+				System.out.printf(" ---------- CALCULADORA DA MI ------- \n ");
+
+				soma = (valor1 + valor2);
+				System.out.printf(" *** 1 - soma = %d \n ", soma);
+				
+				subtracao = (valor1 - valor2);
+				System.out.printf(" *** 2 - subtração = %d \n ", subtracao);
+
+
+			}
+
+			
+
+			
+
+			/*System.out.printf(" ---------- CALCULADORA DA MI ------- \n ");
+
+			soma = (valor1 + valor2);
+			System.out.printf(" *** 1 - soma = %d \n ", soma);
+
+			/*subtracao = (num1 - num2);
+			System.out.printf(" *** 2 - subtração = %d \n ", subtracao);
+
+			multiplicacao = (num1 * num2);
+			System.out.printf(" *** 3 - multiplicação = %d \n ", multiplicacao);
+
+			divisao = (num1 / num2);
+			System.out.printf(" *** 4 -divisão é %d \n ", divisao);*/
+			cont++;
+
+		}
+		
+	}
+	
+}

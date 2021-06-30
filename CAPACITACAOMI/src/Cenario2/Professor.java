@@ -8,26 +8,23 @@ public class Professor {
 	private String telefone ;
 	private String endereco ;
 	private char genero ;
+	private String setor ;
 	
 	
 	
 
 
-	public Professor(String nome) {
+	public Professor(String nome, String setor) {
 		this.nome = nome;
 		
 	}
 	
-
-	
-	
-	
-	
-	public Professor(String nome, String cpf, String telefone) {
+	public Professor(String nome, String cpf, String telefone, String setor) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.telefone = telefone;
+		this.setor = setor;
 	}
 
 
@@ -35,7 +32,7 @@ public class Professor {
 
 
 
-	public Professor( String nome, String cpf, String telefone, String endereco, char genero) {
+	public Professor( String nome, String cpf, String telefone, String endereco, char genero, String setor) {
 		super();
 		
 		this.nome = nome;
@@ -43,6 +40,7 @@ public class Professor {
 		this.telefone = telefone;
 		this.endereco = endereco;
 		this.genero = genero;
+		this.setor = setor;
 		
 	}
 	
@@ -81,6 +79,14 @@ public class Professor {
 			this.genero = genero;
 		}
 		
+		public void getSetor() {
+			
+			
+		}
+		public void setSetor(String setor) {
+			this.setor = setor;
+		}
+		
 		
 		
 		
@@ -108,12 +114,7 @@ public class Professor {
 	}
 
 
-		@Override
-		public String toString() {
-			return "Professor [nome=" + nome + ", cpf=" + cpf + ", telefone=" + telefone + ", endereco=" + endereco
-					+ ", genero=" + genero + "]";
-		}
-
+		
 
 		}
 

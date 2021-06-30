@@ -1,47 +1,27 @@
-package calculadora;
+package CalculadoraDaMi;
 
 import java.util.Scanner;
 
-public class CalcMi {
-	
-public static void main(String[] args) {
-		
-		Scanner leia = new Scanner(System.in);
+public class ProgramaCalculadora {
+	public static void main(String[] args){
+
+Scanner leia = new Scanner(System.in);
 		
 		//variaveis
 		int tentativas=-1;
 		String senha;
 		String nome;
+		char tipo;
 		char op;
 		char continua=' ';
 		double valor1=0.00, valor2=0.00, resultado=0.00;
-		
-				
-		//entradas
-		System.out.println("Calculadora da MI");
-		System.out.println();
-		System.out.print("Digite seu nome: ");
-		nome=leia.next();
-		
-		//TESTANDO AS SENHAS
-		do {
-			tentativas++;
-			if(tentativas>0 && tentativas <=2) {
-				System.out.println("Tente de novo");
-			} else if(tentativas==3) {
-				System.out.println("EXCEDEU O MAXIMO DE 3 VEZES!!!");
-				break;
-			}
-			System.out.print("Digite a senha :");
-			senha=leia.next();
-			 
-		} while (!senha.equals("1234")); 
-		//APOS AS SENHAS EU CONTINUO SAIO FORA
 		
 		//CASO A SENHA ESTEJA CORRETA
 		if (tentativas != 3) {
 			do {
 				System.out.println("+-----MI-CALCULE----------------+");
+				System.out.println("| L - Liga                      |");
+				System.out.println("| D - Desliga                   |");
 				System.out.println("| 1 - Soma                      |");
 				System.out.println("| 2 - Subtração                 |");
 				System.out.println("| 3 - Multiplicação             |");
@@ -111,8 +91,9 @@ public static void main(String[] args) {
 		System.out.println("FIM DE PROGRAMA!!!");
 		
 		
-
-	}
+		}
 }
+		
+		
 
 

@@ -109,6 +109,9 @@ public class Aluno {
 			resposta = "Alune";
 		}
 		 return resposta;
+		 
+		 
+		 
 			
 		 //toString
 	}

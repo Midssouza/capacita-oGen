@@ -23,4 +23,15 @@ public class Cachorro extends TesteAnimal{
 		// TODO Auto-generated method stub
 		return null;
 	}
-}
+
+	public void setIdade(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+		
+	
+
+		
+	}

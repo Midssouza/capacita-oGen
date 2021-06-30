@@ -19,8 +19,25 @@ public class Preguica extends TesteAnimal {
 		System.out.println("Oi, meu nome é  "
 				+ this.getNome()
 				+ " e tenho "
-				+ this.getNome()
+				+ this.setIdade()
 				+ " anos"); 
 
 }
-}
+
+	private String setIdade() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setNome(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setIdade(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	}
